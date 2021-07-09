@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["esnext"],
+    "removeComments": false,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "types": ["jest"],
+    "paths": {
+      "@mocks/*": ["src/__mocks__/*"]
+    }
+  },
+  "include": ["./src/**/*.ts", "index.ts"],
+  "exclude": ["node_modules"]
+}
