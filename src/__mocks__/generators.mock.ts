@@ -2,7 +2,7 @@ import { MOCK_ALPHABET_LOWER } from './consts.mock';
 
 export const MOCK_GET_RANDOM_STRING = (
   length: number = 4,
-  characters: string = MOCK_ALPHABET_LOWER
+  characters: string = MOCK_ALPHABET_LOWER,
 ): string => {
   const res = [];
 

@@ -20,13 +20,7 @@ module.exports = function (api) {
     '@babel/preset-typescript',
   ];
 
-  const ignore = [
-    '**/__mocks__',
-    '**/*.spec.js',
-    '**/*.spec.ts',
-    '**/*.test.js',
-    '**/*.test.ts',
-  ];
+  const ignore = ['**/__mocks__', '**/*.spec.js', '**/*.spec.ts', '**/*.test.js', '**/*.test.ts'];
 
   return {
     presets,
