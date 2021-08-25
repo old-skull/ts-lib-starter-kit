@@ -16,8 +16,8 @@
   "scripts": {
     "build": "npm-run-all --serial prebuild build:*",
     "prebuild": "rimraf dist",
-    "build:esm": "BABEL_ENV=esm babel src --root-mode upward --extensions .js,.jsx,.ts,.tsx -d dist/esm --source-maps",
-    "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .js,.jsx,.ts,.tsx -d dist/cjs --source-maps",
+    "build:esm": "cross-env BABEL_ENV=esm babel src --root-mode upward --extensions .js,.jsx,.ts,.tsx -d dist/esm --source-maps",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src --root-mode upward --extensions .js,.jsx,.ts,.tsx -d dist/cjs --source-maps",
     "build:types": "tsc --project tsconfig.build.json",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -40,6 +40,7 @@
     "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "cross-env": "^7.0.3",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
